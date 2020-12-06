@@ -9,7 +9,6 @@ data class Movie(
     @SerializedName("belongs_to_collection")
     val belongsToCollection: Any,
     val budget: Int,
-    val genres: List<Genre>,
     val homepage: String,
     val id: Int,
     @SerializedName("imdb_id")

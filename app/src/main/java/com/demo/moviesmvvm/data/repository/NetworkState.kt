@@ -2,9 +2,9 @@ package com.demo.moviesmvvm.data.repository
 
 class NetworkState(val status: Status, msg: String) {
     companion object {
-        lateinit var loaded: NetworkState
-        lateinit var laoding: NetworkState
-        lateinit var error: NetworkState
+        var loaded: NetworkState? = null
+        var laoding: NetworkState? = null
+        var error: NetworkState? = null
     }
 
     init {

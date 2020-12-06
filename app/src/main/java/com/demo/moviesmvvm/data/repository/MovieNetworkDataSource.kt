@@ -22,6 +22,7 @@ class MovieNetworkDataSource(private var apiService: MovieApi, private var dispo
         get() = _movieResponse
 
     fun fetchMovie(movieId: Int) {
+        Log.d("panda", "Fetching movie with ID: $movieId")
         _networkState.postValue(NetworkState.laoding)
 
         try {
